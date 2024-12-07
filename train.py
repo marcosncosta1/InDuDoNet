@@ -23,7 +23,7 @@ from math import ceil
 from deeplesion.Dataset import MARTrainDataset
 from network.indudonet import InDuDoNet
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '0'
+os.environ['CUDA_VISIBLE_DEVICES'] = '1'
 parser = argparse.ArgumentParser()
 parser.add_argument("--data_path", type=str, default="./deep_lesion/", help='txt path to training spa-data')
 parser.add_argument('--workers', type=int, help='number of data loading workers', default=0)
